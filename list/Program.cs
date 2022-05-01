@@ -1,12 +1,22 @@
 using System;
+using Ionic.Zip;
 
-namespace cs_0501_01
+namespace cs_con_DotNetZip
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (ZipFile zip = ZipFile.Read("C:\\Users\\sworc\\Downloads\\subject-main.zip")) {
+
+                string text = "";
+
+                foreach (ZipEntry zip_entry in zip) {
+                    text = $"{zip_entry.FileName} : {zip_entry.UncompressedSize} : {zip_entry.CompressedSize}";
+                    Console.WriteLine(text);
+                }
+
+            }
         }
     }
 }
