@@ -1,7 +1,7 @@
 using System;
 using Ionic.Zip;
 
-namespace cs_con_DotNetZip-list
+namespace cs_con_DotNetZip_list
 {
     class Program
     {
