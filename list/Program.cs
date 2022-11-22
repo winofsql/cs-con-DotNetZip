@@ -7,7 +7,7 @@ namespace cs_con_DotNetZip_list
     {
         static void Main(string[] args)
         {
-            using (ZipFile zip = ZipFile.Read("C:\\Users\\sworc\\Downloads\\subject-main.zip")) {
+            using (ZipFile zip = ZipFile.Read("cs-con-DotNetZip-main.zip")) {
 
                 string text = "";
 
